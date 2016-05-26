@@ -1,0 +1,18 @@
+{
+  "name": "js_graphs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "graph.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "w3cj",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
