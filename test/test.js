@@ -41,15 +41,15 @@ describe('Graph', function() {
     expect(cityGraph.size()).to.equal(7);
   });
 
-  it('should calculate the number of edges', function() {
+  xit('should calculate the number of edges', function() {
     expect(cityGraph.numEdges()).to.equal(10);
   });
 
-  it('should calculate the total weight', function () {
+  xit('should calculate the total weight', function () {
     expect(cityGraph.weight()).to.equal(8750);
   });
 
-  it('should find node neighbors', function () {
+  xit('should find node neighbors', function () {
     let neighbors = cityGraph.findNeighbors("Chicago");
 
     expect(neighbors.length).to.equal(3);
@@ -58,7 +58,7 @@ describe('Graph', function() {
     expect(neighbors.contains("Nashville")).to.equal(true);
   });
 
-  it('should find the shortest path', function () {
+  xit('should find the shortest path', function () {
     let path = cityGraph.findPath("Seattle", "Nashville");
     expect(path.length).to.equal(2);
     // Seattle -> Denver -> Nashville
@@ -69,7 +69,7 @@ describe('Graph', function() {
     expect(Graph.pathWeight(path)).to.equal(2474);
   });
 
-  it('should find orphans', function () {
+ xit('should find orphans', function () {
     let graph = new Graph();
     // A <-> B   C
     graph.addNode("A");
